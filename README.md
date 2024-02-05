@@ -1,2 +1,9 @@
-# C_tutorials
-some c code and tutorials
+# Basic **C** tutorial
+
+you will find here 
+
+* variables type
+* how to work with functions
+* pointers
+* dynamic array
+* struct
