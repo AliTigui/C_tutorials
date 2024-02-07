@@ -44,4 +44,18 @@ printf("b bigger then a\n");
         printf("not digit\n");
     }
     // loops
+    for (int i=0;i<10;i++){
+        printf("%d \n",i*i);
+    }
+    char answer;
+    while(answer!='q'){
+        printf("hello\n");
+        scanf("%c",&answer);
+
+    }
+    int d=10;
+    do{
+        printf("%d",d);
+        d++;
+    }while(d<10);
 }
