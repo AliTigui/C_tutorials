@@ -16,20 +16,28 @@ int main(){
     int b=5;
     greeting();
     sum(a,b);
-    printf("a= %d b =%d before swap",a,b);
+    printf("a= %d b =%d before swap\n",a,b);
     swap(&a,&b);
-    printf("a= %d b =%d after swap",a,b);
-    printf("%d",max(a,b));
+    printf("a= %d b =%d after swap\n",a,b);
+    printf("max is %d \n",max(a,b));
 
 }
 void greeting(void){
-printf("hello");
+printf("hello\n");
 }
 void sum(int a,int b){
-    printf("sum equal to",a+b);
+    printf("sum equal to %d \n",a+b);
 }
 void swap(int*a,int* b){
     int t=*(a);
     *a=*b;
     *b=t;
+}
+int max(int a,int b){
+    if (a>b){
+        return a;
+    }
+    else{
+        return b;
+    }
 }
