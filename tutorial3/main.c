@@ -18,7 +18,8 @@ printf("number equal \n");
     }else{
 printf("b bigger then a\n");
     }
-    char c='1';
+    char c='6';
+    // switch case work only with char or int
     switch(c){
         case '1':
         printf("one\n");
@@ -32,8 +33,15 @@ printf("b bigger then a\n");
         case '4':
         printf("four\n");
         break;
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+        printf("digit bigger then 4\n");
+        break;
         default:
-        printf("other digit\n");
+        printf("not digit\n");
     }
     // loops
 }
