@@ -11,6 +11,7 @@ void greeting(void);
 void sum(int a,int b);
 void swap(int*a,int* b);
 int max(int a,int b);
+int poww(int n,int b);
 int main(){
     int a=4;
     int b=5;
@@ -20,6 +21,7 @@ int main(){
     swap(&a,&b);
     printf("a= %d b =%d after swap\n",a,b);
     printf("max is %d \n",max(a,b));
+    printf("the number %d to power of %d is %d \n",a,b,poww(a,b));
 
 }
 void greeting(void){
@@ -39,5 +41,14 @@ int max(int a,int b){
     }
     else{
         return b;
+    }
+}
+// recursive function
+int poww(int n,int b){
+    if(b==1){
+        return n;
+    }
+    else{
+        return n*poww(n,b-1);
     }
 }
