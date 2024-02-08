@@ -4,6 +4,7 @@
  * dynamic memory allocation
  * growing list 
  * strings
+ * always we have to free memory that we allocate
  */
 #include <stdlib.h>
 #include <stdio.h>
@@ -44,5 +45,34 @@ int main(){
     *(s+7)='n';
     *(s+8)='o';
     *(s+9)='o';
-    printf("%s",s);
+    printf("%s\n",s);
+    free(s);
+    //2 d array
+    int row =3;
+    int colomn =4;
+    int** arr2d=malloc(row*sizeof(int*));
+    for (int i=0;i<row;i++){
+        *(arr2d+i)=(int*)calloc(colomn,sizeof(int));
+
+    }
+    int v=0;
+     for (int i=0;i<row;i++){
+        
+        for (int j=0;j<colomn;j++){
+            v++;
+            *(*(arr2d+i)+j)=v;
+        }
+    }
+    for (int i=0;i<row;i++){
+        
+        for (int j=0;j<colomn;j++){
+             printf("%d ",*(*(arr2d+i)+j));
+        }
+        printf("\n");
+    }
+    for (int i=0;i<row;i++){
+        free(*(arr2d+i));
+
+    }
+    free(arr2d);
 }
