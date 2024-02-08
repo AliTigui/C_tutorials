@@ -22,6 +22,7 @@ int main(){
     printf("a= %d b =%d after swap\n",a,b);
     printf("max is %d \n",max(a,b));
     printf("the number %d to power of %d is %d \n",a,b,poww(a,b));
+    return 0;
 
 }
 void greeting(void){

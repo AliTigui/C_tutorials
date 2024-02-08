@@ -58,4 +58,5 @@ printf("b bigger then a\n");
         printf("%d",d);
         d++;
     }while(d<10);
+    return 0;
 }

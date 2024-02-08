@@ -75,4 +75,5 @@ int main(){
 
     }
     free(arr2d);
+    return 0;
 }
