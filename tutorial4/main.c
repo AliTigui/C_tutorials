@@ -3,7 +3,7 @@
  * pointer and how to use them
  * dynamic memory allocation
  * growing list 
- * 
+ * strings
  */
 #include <stdlib.h>
 #include <stdio.h>
@@ -27,4 +27,22 @@ int main(){
     }
     printf("%d \n",*(arr+4));
     free(arr);
+    // working with string
+    char* s;
+    int l=2;
+    s=malloc(sizeof(char)*l);
+    *s='a';
+    *(s+l-1)='\0';
+    l=10;
+    s=realloc(s,sizeof(char)*(l+1));
+    *(s+1)='l';
+    *(s+2)='i';
+    *(s+3)=' ';
+    *(s+4)='g';
+    *(s+5)='h';
+    *(s+6)='a';
+    *(s+7)='n';
+    *(s+8)='o';
+    *(s+9)='o';
+    printf("%s",s);
 }
