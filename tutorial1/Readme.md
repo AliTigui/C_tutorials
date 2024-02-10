@@ -17,7 +17,7 @@ Arithmetic operators used to make formula or do some math with our variables ,th
 * Soustraction **-** work with same logice as addition
 * Multiplication **\*** multiply two number together this opeeator don't work with ``char``
 * Division **\\** . division for ``float`` or ``double`` give the exact result but for ``int`` or ``long`` it return natural number ir remove numbers after the floating point **it doesn't round the result**
-* Modulo % it return the reat of divition it work only with ``int`` and ``long``
+* Modulo **%** it return the rest of divition it work only with ``int`` and ``long``
 ### Comparison Operators
 those operator used to compare tow operand
 * Equality we can check equality usong ``==``
@@ -26,4 +26,8 @@ those operator used to compare tow operand
 * Smaller then we can check if operand 1 smaller then operand 2 using ``<``
 * Smaller then or equal and greater then or equal we can check those using ``<=``, ``>=`` respectively 
 
-### Arithmetic Operators
+### Logical Operators
+logical operator used ro chain many conditions or logic result together 
+* Logical **and** we can exprim that using ``&&`` , it return true only if all oprands are true 
+* Logical **or** we can exprim it using ``||`` , it return false only if all oprand are false 
+* Negation ``!``  it flip the result if it true we get false if it false we get true 
