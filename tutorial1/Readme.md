@@ -33,6 +33,6 @@ logical operator used ro chain many conditions or logic result together
 * Negation ``!``  it flip the result if it true we get false if it false we get true 
 ### Comments
 Comment are line of code that the compiler will skip and don't compile. we write comment for use and other developers . they can be as todo list or hint to use to remember how the code work . in C there is 2 type of comment 
-* One line comment we can make that usong ``\\\\``
-* Multiple line comment we can write that using ``\\\*``
+* One line comment we can make that usong ``\\this will be comment untile end of the line``
+* Multiple line comment we can write that using ``\* the comment line here*\``
 * 
