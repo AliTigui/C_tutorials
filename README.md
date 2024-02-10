@@ -9,11 +9,11 @@ it will be devided into serval tutorials each one cover simple topics
 In this tutorial we will see C data types we will see:
 * ``char`` it represent single character, it cost 1 byte in memory and use **Ascii** encoding 
 * ``int`` it represent Integer using it in operations will generate interger
-  for exemple if we devide 4/3 we get 1
-*
-* 
-
-* variables type
+  for exemple if we devide 4/3 we get1
+* ``float`` it used to represent floated point number like 3.14 
+* ``long`` it same as int but it store more data that mean we can represent bogger number
+* ``double`` floating point number with double precision it represents floating number with more precision and use more memory 
+* array exemple ``int a[4];`` or char ``a[]="hello";``.Array used to store multiple value of same type in one variable there is two type of arrays , fixed size like those two or dynamic size array we will see it later when we see pointer.
 * how to work with functions
 * pointers
 * dynamic array
