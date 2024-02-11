@@ -28,7 +28,7 @@ int main(){
     printf("max is %d \n",max(a,b));
     printf("the number %d to power of %d is %d \n",a,b,poww(a,b));
     printf("min is %d \n",min(6,1,0,3,4,1,5));
-    printf("min is %d",do_fun(a,b,min));
+    printf("min is %d",do_fun(a,b,max));
     return 0;
 
 }
