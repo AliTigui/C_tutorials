@@ -14,3 +14,7 @@ here we will see different types of functions
 - function that take reference to acces the real variable
 - function that take non fixed number of arguments
 - function that take another function
+
+## Tutorial 3
+we discuss in this tutorial different type of control follow and loop we see ``if , else if else`` we also see ``switch case `` and then we move to loops 
+
