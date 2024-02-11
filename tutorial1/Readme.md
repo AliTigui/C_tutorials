@@ -35,4 +35,13 @@ logical operator used ro chain many conditions or logic result together
 Comment are line of code that the compiler will skip and don't compile. we write comment for use and other developers . they can be as todo list or hint to use to remember how the code work . in C there is 2 type of comment 
 * One line comment we can make that usong ``\\this will be comment untile end of the line``
 * Multiple line comment we can write that using ``\* the comment line here*\``
-* 
+### getting input and printing output
+we print to the screen using ``printf("hello \n")`` here we use ``\n`` to print new line.
+
+we can print variables value using ``printf("%d",d)`` the ``%*`` should match the variable type we have
+* for char ``%c``
+* for int ``%i``
+* for float ``%d``
+* for double ``%ld``
+* for string ``%s``
+
