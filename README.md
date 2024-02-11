@@ -16,5 +16,4 @@ here we will see different types of functions
 - function that take another function
 
 ## Tutorial 3
-we discuss in this tutorial different type of control follow and loop we see ``if , else if else`` we also see ``switch case `` and then we move to loops 
-
+we discuss in this tutorial different type of control follow and loop we see ``if , else if else`` we also see ``switch case `` and then we move to loops  we will see ``for`` loop ``while`` loop and finally ``do while`` loop
