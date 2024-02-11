@@ -44,4 +44,6 @@ we can print variables value using ``printf("%d",d)`` the ``%*`` should match th
 * for float ``%d``
 * for double ``%ld``
 * for string ``%s``
+to read values feom user we use ``scanf("%c",&c)`` we have to pass to this function pointer of variable where we want store our data in, to take string if we use ``scanf("%s",s)`` we will lose the string after space
+to fix that we use regular expression ``scanf("%[^\n]%*c",s)`` and we add before it ``scanf("\n")``
 
