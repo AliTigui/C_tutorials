@@ -3,7 +3,8 @@
  * function that don't return value or get parametre
  * function that get parametre
  * function thet get parametre and return value
- * recursive function
+ * recursive function 
+ * function that take another function
  * also passing real value to functionswith pointer
  * and in last function with unfixed size of argument 
  */
@@ -14,6 +15,7 @@ void sum(int a,int b);
 void swap(int*a,int* b);
 int max(int a,int b);
 int poww(int n,int b);
+int do_fun(int a,int b,int (* fun)(int a,int b));
 int min(int count ,...);
 int main(){
     int a=4;
@@ -26,6 +28,7 @@ int main(){
     printf("max is %d \n",max(a,b));
     printf("the number %d to power of %d is %d \n",a,b,poww(a,b));
     printf("min is %d \n",min(6,1,0,3,4,1,5));
+    printf("min is %d",do_fun(a,b,min));
     return 0;
 
 }
@@ -83,3 +86,7 @@ int min(int count,...) {
     va_end(ptr);
     return min;
 }
+int do_fun(int a,int b,int (* fun)(int a,int b)){
+    return fun(a,b);
+}
+
