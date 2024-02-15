@@ -91,3 +91,15 @@ int min(int count,...) {
     return min;
 }
 ```
+### Function that take other function as parametre 
+we can make function that take other function as parametre for example we want make function that sort a collection of value but it sort in deferente way to avoid making big function with defferent flag and condition or to make defferent function for all case
+we can make a sorting function that sort our collection and also functions that define how the sort will work  
+#### Example 
+```C
+int do_fun(int a,int b,int (* fun)(int a,int b)){
+    return fun(a,b);
+}
+```
+this code take 2 parametre a and b and take a function that define what we want to do to those 2 parametre
+then we just call the function and we pass to it the 2 variable ad the functio  
+`printf("min is %d",do_fun(a,b,max));`
