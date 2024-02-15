@@ -47,3 +47,19 @@ void swap(int*a,int* b){
 }
 ```  
 and to call the function we use `swap(&a,&b) `  
+### Recursive function
+recursive function are special function that have ability to call theirself to make recursive function we just need to call the function inside it self  
+for recursive function we need to make a bsae case it describe what the code should return when it hit special condition if we don't do that 
+code will keep calling it self and that will cuz stack overflow and our programe will crash
+
+#### Example
+```C
+int poww(int n,int b){
+    if(b==1){
+        return n;
+    }
+    else{
+        return n*poww(n,b-1);
+    }
+}
+```
