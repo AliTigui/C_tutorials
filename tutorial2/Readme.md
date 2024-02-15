@@ -1,4 +1,4 @@
-## Tutorial 1
+## Tutorial 2
 
 In this tutorial we will work with functions:
 ### define function
