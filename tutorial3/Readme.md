@@ -18,7 +18,9 @@ if (a>b){
 ### Short hand of else statement
 sometime we want use if statement only to return value based on condition we can use that with nrml `if` `else` but we will just write big block of code for simple functionality , the other aproch is to use **ternary operator** and it work like this `testCondition ? expression1 : expression 2;`
 #### Example 
+```C
 (age >= 18) ? printf("Can Vote") : printf("Cannot Vote");
+```
 ### Switch case
 Sometimes we want chose defferent statement to excute based on value of a **char** or **int** we can do that using `if` `else` but there is another aproch faster then this it by using switch case statement  
 switch case work only with char and int first we pass the variable to the switch then we make defferent case each one have statement and branch to of code that we want to excute when the variable value match the case 
@@ -51,4 +53,25 @@ we can add the default and that mean the  code inside it will work when value do
         default:
         printf("not digit\n");
     }
+```
+### Loops
+we use loops to excute blook of codes certain number of time , In Cwe have three loops
+    * For loop we use it when we know how many times we want to excute branch of code we can use it also to iterate over collecion of data
+    * While loop we use it when the repetetion based on condition ,repeat the block of code until condition become false. it always check the condition before it excute the block of code
+    * Do while loop it work with the same logic as while loop but this type excute the block of code atleast 1 time. it excute the block of code then check the condition
+#### Example
+```C
+for (int i=0;i<10;i++){
+    printf("%d \n",i*i);
+}
+char answer;
+while(answer!='q'){
+    printf("hello\n");
+    scanf("%c",&answer);
+}
+int d=10;
+do{
+    printf("%d",d);
+    d++;
+}while(d<10);
 ```
