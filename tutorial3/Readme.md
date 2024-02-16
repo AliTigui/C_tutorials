@@ -15,6 +15,10 @@ if (a>b){
         printf("b bigger then a\n");
     }
 ```
+### Short hand of else statement
+sometime we want use if statement only to return value based on condition we can use that with nrml `if` `else` but we will just write big block of code for simple functionality , the other aproch is to use **ternary operator** and it work like this `testCondition ? expression1 : expression 2;`
+#### Example 
+(age >= 18) ? printf("Can Vote") : printf("Cannot Vote");
 ### Switch case
 Sometimes we want chose defferent statement to excute based on value of a **char** or **int** we can do that using `if` `else` but there is another aproch faster then this it by using switch case statement  
 switch case work only with char and int first we pass the variable to the switch then we make defferent case each one have statement and branch to of code that we want to excute when the variable value match the case 
