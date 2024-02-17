@@ -75,3 +75,17 @@ do{
     d++;
 }while(d<10);
 ```
+### More control over loop
+we can add more control over loop like skipping special value or breaking the loop when a condition happen using `break` and `continue`  
+`break` is used to stop the loop , `continue` is used to skip to the next step
+#### Example
+```C
+for (int i=0;i<10;i++){
+    if(i%2==0){
+        continue;
+    }else if(i==7){
+        break;
+    }else{
+    printf("%d \n",i*i);
+    }
+}
