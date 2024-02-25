@@ -51,3 +51,5 @@ string are just array of character in C we can create string by creaating pointe
     printf("%s\n",s);
     free(s);
 ```
+### 2D array and beyond
+we can make 2d array in c by makin pointer to pointer like that `int ** arr`, and by applying this method we can get 3d and even more
