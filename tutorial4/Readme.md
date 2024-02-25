@@ -28,3 +28,26 @@ a=malloc(sizeof(int));
     }
     free(arr);
 ```
+### String
+string are just array of character in C we can create string by creaating pointer for `char` type and then we give it size that we want our string to fit then we just iterate over it end assigne the characters we want to it 
+#### Example
+```C
+    char* s;
+    int l=2;
+    s=malloc(sizeof(char)*l);
+    *s='a';
+    *(s+l-1)='\0';
+    l=10;
+    s=realloc(s,sizeof(char)*(l+1));
+    *(s+1)='l';
+    *(s+2)='i';
+    *(s+3)=' ';
+    *(s+4)='g';
+    *(s+5)='h';
+    *(s+6)='a';
+    *(s+7)='n';
+    *(s+8)='o';
+    *(s+9)='o';
+    printf("%s\n",s);
+    free(s);
+```
