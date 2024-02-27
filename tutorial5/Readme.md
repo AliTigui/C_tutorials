@@ -11,3 +11,7 @@ struct MyStructure {   // Structure declaration
   char myLetter;       // Member (char variable)
 };
 ```
+### Enum
+enum are type of data that can hold multiple value like colors; choises.... we create enum same way as creating structure ; but enum differ is that it can have value represent a number for each choice
+or it can be empty that mean enums value start from 0 and increase
+#### Example
