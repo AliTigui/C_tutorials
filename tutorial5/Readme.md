@@ -10,8 +10,29 @@ struct MyStructure {   // Structure declaration
   int myNum;           // Member (int variable)
   char myLetter;       // Member (char variable)
 };
+int main(){
+
+struct MyStructure s;
+s.myNum=4;
+s.myLetter='C';
+return 0;
+}
 ```
 ### Enum
 enum are type of data that can hold multiple value like colors; choises.... we create enum same way as creating structure ; but enum differ is that it can have value represent a number for each choice
 or it can be empty that mean enums value start from 0 and increase
 #### Example
+```C
+enum Level {
+  LOW = 25,
+  MEDIUM = 50,
+  HIGH = 75
+};
+int main(){
+
+enum Level myv=MEDIUM;
+
+printf("enum %d",myv);
+return 0;
+}
+```
